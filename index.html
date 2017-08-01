@@ -21,14 +21,17 @@
         <a id="odm2-information-model" class="anchor" href="#odm2-information-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ODM2 Information Model
       </h3>
 
-      <p>ODM2 is a community information model aimed at extending interoperability of feature based earth observations derived from sensors and samples and improve the capture, sharing, and archival these data. ODM2, is being designed from a general perspective, with extensibility for achieving interoperability across multiple disciplines and systems that support publication of earth observations.</p>
+      <p>ODM2 is an information model and supporting software ecosystem for feature-based earth observations, designed to facilitate interoperability across scientific disciplines and domain cyberinfrastructures. For example, a single ODM2 database can readily integrate diverse types datasets such as:  hydrological time series, soil and sediment geochemistry, biodiversity surveys, oceanographic sensor profiles, multi-dimensional spectra, and more (Horsburgh et al. 2016). ODM2 was developed with extensive community input by integrating and enhancing concepts from ODM1 (from CUAHSI Hydrological Information System), IEDA PetDB & SedDB and other existing information models. ODM2 is a profile of Open Geospatial Consortium's (OGC) Observations and Measurements (O&M) standard.</p>
+
+      <p>ODM2 metadata structure provides a powerful new way to describe sampling, sensing, and analysis workflows. A flexible Sampling Feature extension tracks relationships in nested hierarchies of sampling sites (weather stations, stream gauges, soil pits, wells, bore holes, etc.), field specimens (rocks, cores, soils, water, gas, plants, etc.), and lab specimens (i.e. subsamples, fractions, powders, extracts, digests).  This extension is fully compatible with OGC O&M Sampling Features and International Geo Sample Numbers (IGSN).The ability to record Actions (e.g., sensor deployments, specimen collection, lab analyses), relationships between Actions, People that perform them, the Methods and Equipment that are used, and their Results and Values of many types. Object-Relational-Mapping translates entity types to a class-subclass structure that enables inclusion of domain-specific attributes.</p>
 
       <p align="center"><img src="images/informationmodel.jpg" /></p>
 
-      <p>Several geoscience cyberinfrastructures use a services oriented architecture (SOA). The information model is central to SOA and specifies the information requirements and semantics of data encodings for storage and transfer of data and metadata. A common information model enables interoperability among data server, client, and catalog components of the SOA.</p>
+      <p>ODM2 can also facilitate interpoerablity in distributed cyberinfrastructure that use a services oriented architecture (SOA, Figure 1). SOAs are most effective when the data Storage, Catalog, Client and Transfer components of an SOA all use the same information model for requirements and semantics. ODM2 was designed to serve all of these functions, with the vision for a future SOA designed around ODM2.</p>
 
+      <p><a href="https://github.com/ODM2/" target="_blank">Visit the ODM2 GitHub Organization</a> for information and downloads of the entire ODM2 software ecosystem.</p>
+      <p><a href="https://github.com/ODM2/ODM2/" target="_blank">Visit the ODM2/ODM2 GitHub repository</a> to access blank schemas for relational database implementations and scripts for populating controlled vocabularies.</p>
       <p><a href="https://github.com/ODM2/ODM2/wiki/Documentation" target="_blank">View documentation for ODM2</a> for a more detailed description of the information model and it's features and functionality.</p>
-      <p><a href="https://github.com/ODM2/ODM2/" target="_blank">Visit the ODM2 GitHub repository</a> to access blank schemas for relational database implementations and scripts for populating controlled vocabularies.</p>
       <p>Have a look at the ODM2 paper in Environmental Modelling & Software. It's open access!</p>
       <p>Horsburgh, J. S., Aufdenkampe, A. K., Mayorga, E., Lehnert, K. A., Hsu, L., Song, L., Spackman Jones, A., Damiano, S. G., Tarboton, D. G., Valentine, D., Zaslavsky, I., Whitenack, T. (2016). Observations Data Model 2: A community information model for spatially discrete Earth observations, <i>Environmental Modelling & Software</i>, 79, 55-74, <a href='http://dx.doi.org/10.1016/j.envsoft.2016.01.010' target='_blank'>http://dx.doi.org/10.1016/j.envsoft.2016.01.010</a></p>
 
@@ -57,7 +60,7 @@
         <li><a href="https://github.com/UCHIC/WEBTSA" target="_blank">Time Series Analyst</a> - A Python/Django-based web application for visualizing environmental time series data served via WaterML web services</li>
         <li><a href="https://github.com/ODM2/ODM2WebSDL" target="_blank">ODM2 Web Streaming Data Loader</a> - A Python/Django-based web application and web service for registering data collection devices and streaming sensor observations into an ODM2 database</li>
         <li><a href="https://github.com/miguelcleon/ODM2-Admin" target="_blank">ODM2 Admin</a> - A web-based Django/Python admin application for loading data, visualizing, and managing sample data within an ODM2 database instance</li>
-      </ul>      
+      </ul>
 
       <h3>
         <a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
